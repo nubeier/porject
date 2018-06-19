@@ -1,0 +1,6 @@
+public 是个公共区域
+common
+一般来说吧SQL和验证码都放到这里
+config.php（数据库公共链接）
+function.php（把所有的验证码和函数放到这里）
+public里面的东西基本都是前后台公用的

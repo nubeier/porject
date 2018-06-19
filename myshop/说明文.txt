@@ -1,0 +1,116 @@
+home 前台
+public 前后台公用
+admin后台
+shop15 数据库
+每个文件夹都有自己的公共区域例如ADMIN 不能给自己前台HOME 用所以要有自己的PUBLIC
+
+开发设计需求
+1.前台功能、
+首页  		--顶部 和底部还有广告展示 分类展示（那个楼展示比如一楼买手机二楼买电脑） 品牌展示（戴尔还是联想）商品展示 	-
+商品详情页面	返回品牌	商品展示 商品评论 
+分类页面	--分类展示	商品展示
+购物车页面	--购物车功能
+前台注册页面	--注册功能
+前台登录页面  --登录功能
+个人中心	--查看联系方式 删除联系方式 订单管理   商品评论管理  
+结算页面	商品和合计	付款方式	快递渠道	订单提交功能
+
+
+2，后台界面
+后台登录页面
+后台顶部页面
+后台左部页面
+后台右边页面
+3，后台功能（模块开发）
+后台退出	
+修改管理命令 （修改用户名密码）
+会员管理	（会员由0 和1来区别）
+广告管理	
+品牌管理
+商品管理
+评论管理
+订单状态管理
+订单管理
+数据库设计（根据后台来设计 刚好对应8个表）
+会员表 user
+广告表	advert
+分类表	class
+品牌表	brand
+商品表	shop
+评论表	comment
+订单状态表	status
+订单表		indent
+联系方式	touch
+数据库的准备
+1,user用户表
+id 
+name 
+password
+isadmin	是否是会员用0和1表示
+2，advert 广告表
+id
+img
+pos
+url
+3,class 分类表
+id
+name
+4,brand 品牌表
+id
+name
+class_name
+5,shop 商品表
+id
+name
+img
+price	价格
+stock  库存
+brand_id
+isshelf(是否上下架)
+6.comment 评论表
+id
+user_id（谁评论的）
+shop_id（买的什么东西）
+content（评论内容）
+time(什么时候评论)
+7.status 订单状态表
+id
+name  
+8.indent
+id 
+num (订单号)
+user_id (用户名)
+time
+status_id
+touch_id(联系方式)	
+
+9.touch 联系方式表
+ id
+name
+addr
+tel
+email
+user_id	
+
+目录结构图
+myshop
+|home
+	||public
+		||image
+		||JS
+		||CSS
+|admin
+|	|public
+		||image
+		||JS
+		||css
+index.php
+admin.php
+|public
+	||common  //公用的数据库和函数
+		|function 函数还有图片缩列图等
+		|config.php链接数据库
+	||CSS	//前后端公用的书
+	||image	//前后端公用的图片
+	||js
+	

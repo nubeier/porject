@@ -1,0 +1,92 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 微软雅黑;
+	
+}
+a{
+	text-decoration: none;
+
+}
+.main{
+
+	margin-left:20px;
+	margin-top:30px;
+}
+.main table{
+
+	text-align:center;
+	width:98%;
+	border:1px dashed #888;
+}
+.main td{
+	border-top:1px dashed #888;
+	border-spacing:0px;
+	padding:6px 0px;
+}
+.button{
+	color:#fff;
+	text-decoration: none;
+	background:#E4393C;
+	border-radius: 8px;
+	padding:5px;
+}
+.main form {
+	border:1px dashed #888;
+	padding:30px;
+	width:98%;
+	margin-right:30px;
+}
+.main form p{
+	margin-bottom:5px;
+}
+.tel{
+	text-decoration: none;
+	background:black;
+	color:#fff;
+	border-radius: 10px;
+}
+.shopclass{
+	margin-bottom: 10px;
+}
+.shopclass p{
+	float:left;
+	padding-right:5px;
+	padding-left: 10px;
+}
+.shopclass  a{
+	padding-right:10px;
+}
+.page{
+	position: relative;
+	margin-left: 40%;
+}
+.page ul{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	list-style: none;
+}
+.page ul li{
+
+	float:left;
+	margin-left:5px;
+}
+.page ul li a{
+	padding:2px;
+	border:1px solid #888;
+}
+.page ul li a:hover{
+	color:red;
+}
+.classbrand{
+margin-bottom:10px;
+}
+.classbrand p{
+	padding-right: 15px;
+	padding-left:10px;
+	float:left;
+}
+.classbrand span a{
+	padding-right:10px;
+
+}
